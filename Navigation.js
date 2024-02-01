@@ -15,9 +15,9 @@ export default function Navigation() {
             <tab.Navigator
                 initialRouteName={Home}
                 screenOptions={{ headerShown: false }}
-                >
-                
-                <tab.Screen name='Home' component={Home} />
+            >
+
+                <tab.Screen name='Home' component={Home} options={{ tabBarIcon: () => { <Icon name='Person' size={20} /> } }} />
                 <tab.Screen name='Create List' component={CreateList} />
                 <tab.Screen name='Alerts' component={Alerts} />
                 <tab.Screen name='Profile' component={Profile} />
