@@ -1,11 +1,10 @@
 import { View, Text, ScrollView } from 'react-native'
 import React from 'react'
 
-const Home = () => {
+const Home = (navigation) => {
   return (
     <View>
-      <View className="logo">
-      </View>
+      <Text onPress={() => {alert("Home Screen")}}>Home</Text>
     </View>
   )
 }

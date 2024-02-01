@@ -1,11 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { Alerts, CreateList, Home, Profile } from './Screens';
-import { SignIn, SignUp, ResetPassword } from './auth';
+import * as React from 'react'
+import Navigation from './navigation'
 
-export default function App() {
+const App = () => {
   return (
-    <View>
-    </View>
-  );
+    <Navigation/>
+  )
 }
+
+export default App
