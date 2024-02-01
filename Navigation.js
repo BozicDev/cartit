@@ -1,27 +1,26 @@
 import * as React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import Icons from 'react-native-ionicons'
 import { Home, Alerts, CreateList, Profile } from './Screens'
-import Icon from 'react-native-ionicons'
+import { Ionicons, Feather, AntDesign } from '@expo/vector-icons'
 
 
-const tab = createBottomTabNavigator()
+const Tab = createBottomTabNavigator()
 
 export default function Navigation() {
 
     return (
         <NavigationContainer>
-            <tab.Navigator
+            <Tab.Navigator
                 initialRouteName={Home}
-                screenOptions={{ headerShown: false }}
-            >
+                screenOptions={{ headerShown: false }}>
 
-                <tab.Screen name='Home' component={Home} options={{ tabBarIcon: () => { <Icon name='Person' size={20} /> } }} />
-                <tab.Screen name='Create List' component={CreateList} />
-                <tab.Screen name='Alerts' component={Alerts} />
-                <tab.Screen name='Profile' component={Profile} />
-            </tab.Navigator>
+                <Tab.Screen name='Home' component={Home} options={{ tabBarIcon: () => <Ionicons name='home-outline' size={20} /> }} />
+                <Tab.Screen name='Create List' component={CreateList} options={{ tabBarIcon: () => <Ionicons name="create-outline" size={20} /> }} />
+                <Tab.Screen name='Alerts' component={Alerts} options={{ tabBarIcon: () => <Ionicons name="notifications-outline" size={20} /> }} />
+                <Tab.Screen name='Profile' component={Profile} options={{ tabBarIcon: () => <AntDesign name='user' size={20} /> }} />
+                
+            </Tab.Navigator>
         </NavigationContainer>
     )
 

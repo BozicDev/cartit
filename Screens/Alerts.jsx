@@ -1,10 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const Alerts = (navigation) => {
+const Alerts = () => {
   return (
     <View>
-      <Text onPress={() => {alert("Alerts Screen")}}>Alerts</Text>
+      <Text>Alerts</Text>
     </View>
   )
 }

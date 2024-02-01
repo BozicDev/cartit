@@ -1,10 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const CreateList = (navigation) => {
+const CreateList = () => {
   return (
     <View>
-      <Text onPress={() => {alert("CreateList Screen")}}>CreateList</Text>
+      <Text>CreateList</Text>
     </View>
   )
 }
