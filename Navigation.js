@@ -15,10 +15,25 @@ export default function Navigation() {
                 initialRouteName={Home}
                 screenOptions={{ headerShown: false }}>
 
-                <Tab.Screen name='Home' component={Home} options={{ tabBarIcon: () => <Ionicons name='home-outline' size={20} /> }} />
-                <Tab.Screen name='Create List' component={CreateList} options={{ tabBarIcon: () => <Ionicons name="create-outline" size={20} /> }} />
-                <Tab.Screen name='Alerts' component={Alerts} options={{ tabBarIcon: () => <Ionicons name="notifications-outline" size={20} /> }} />
-                <Tab.Screen name='Profile' component={Profile} options={{ tabBarIcon: () => <AntDesign name='user' size={20} /> }} />
+                <Tab.Screen 
+                 name='Home' 
+                 component={Home} 
+                 options={{ tabBarIcon: () => <Ionicons name='home-outline' size={20} /> }} />
+
+                <Tab.Screen 
+                 name='Create List' 
+                 component={CreateList} 
+                 options={{ tabBarIcon: () => <Ionicons name="create-outline" size={20} /> }} />
+
+                <Tab.Screen 
+                 name='Alerts' 
+                 component={Alerts} 
+                 options={{ tabBarIcon: () => <Ionicons name="notifications-outline" size={20} /> }} />
+
+                <Tab.Screen 
+                 name='Profile' 
+                 component={Profile} 
+                 options={{ tabBarIcon: () => <AntDesign name='user' size={20} /> }} />
                 
             </Tab.Navigator>
         </NavigationContainer>
