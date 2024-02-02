@@ -23,7 +23,7 @@ export default function Navigation() {
                 <Tab.Screen 
                  name='Create List' 
                  component={CreateList} 
-                 options={{ tabBarIcon: () => <Ionicons name="add-circle-outline" size={20} /> }} />
+                 options={{ tabBarIcon: () => <Ionicons name="create-outline" size={20} /> }} />
 
                 <Tab.Screen 
                  name='Alerts' 
