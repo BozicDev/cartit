@@ -13,7 +13,7 @@ export default function Navigation() {
         <NavigationContainer>
             <Tab.Navigator
                 initialRouteName={Home}
-                screenOptions={{ headerShown: false }}>
+                screenOptions={{ headerShown: false, tabBarActiveTintColor: "black"}}>
 
                 <Tab.Screen 
                  name='Home' 
