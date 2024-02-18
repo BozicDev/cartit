@@ -1,9 +1,10 @@
 import * as React from 'react'
-import Navigation from './navigation'
+import Navigation from './Navigation'
+import SignUp from './auth/SignUp'
 
 const App = () => {
   return (
-    <Navigation/>
+    <SignUp/>
   )
 }
 
