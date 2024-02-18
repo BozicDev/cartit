@@ -3,10 +3,10 @@ import React from 'react'
 
 const SignUp = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView className="pt-10">
         <View className=" flex-1 justify-center items-center">
             <View className="email-group">
-
+                <Text> E-Mail</Text>
             </View>
         </View>
         <View>
