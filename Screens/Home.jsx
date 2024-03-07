@@ -1,10 +1,10 @@
-import { View, Text } from 'react-native'
+import { View, Text, SafeAreaView, TouchableOpacity } from 'react-native'
 import React from 'react'
 
 const Home = () => {
   return (
-    <View className="" >
-      <Text></Text>
+    <View>
+      <View></View>
     </View>
   )
 }
